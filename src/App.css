@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .App-logo {
@@ -35,4 +37,108 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.binary-positions {
+  display: flex;
+  justify-content: center;
+  margin: 24px;
+  position: absolute;
+  top: 40px;
+  left: 26px;
+  z-index: 0;
+}
+
+@media (max-width: 800px) {
+  .binary-positions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .binary-position {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .integer-container {
+    width: 20%;
+  }
+  .binary-container {
+    width: 20%;
+  }
+  .value-input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+  }
+}
+
+.border {
+  border: solid 1px black;
+}
+
+.integer-container {
+  background-color: #303030;
+}
+
+.binary-container {
+  background-color: dimgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.button {
+  background-color: #222;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: gray;
+}
+
+.button:active {
+  background-color: dimgray;
+}
+
+.increment-button {
+  width: 60px;
+}
+
+.value-input-container {
+  width: 100%;
+  justify-content: center;
+}
+
+.set-button {
+  width: 100px;
+  height: 60px;
+}
+
+.value-input {
+  text-align: center;
+  width: 5em;
+  height: 2em;
+  margin: 12px;
+  font-size: 24px;
+  border: none;
+  background-color: dimgray;
+  color: white;
+}
+
+.line-stage {
+  width: 100%;
+  position: absolute;
+}
+
+.count-container {
+  position: absolute;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
 }
